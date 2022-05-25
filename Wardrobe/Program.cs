@@ -15,18 +15,19 @@ namespace Wardrobe
             {
                 string[] input = Console.ReadLine()
                     //' ', ',', '-', '+'
-                    .Split(new string[] { " ", ",", "->", "+" }, StringSplitOptions.RemoveEmptyEntries);
+                    .Split(" -> ", StringSplitOptions.RemoveEmptyEntries);
 
                 string color = input[0];
+                string[] clothes = input[1].Split(',', StringSplitOptions.RemoveEmptyEntries);
 
-                for (int j = 1; j < input.Length; j++)
+                if (!wardrobe.ContainsKey(color))
                 {
-                    string currItem = input[j];
+                    wardrobe.Add(color, new Dictionary<string, int>());
+                }
 
-                    if (!wardrobe.ContainsKey(color))
-                    {
-                        wardrobe.Add(color, new Dictionary<string, int>());
-                    }
+                for (int j = 0; j < clothes.Length; j++)
+                {
+                    string currItem = clothes[j];
 
                     if (!wardrobe[color].ContainsKey(currItem))
                     {

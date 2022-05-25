@@ -22,7 +22,7 @@ namespace PeriodicTable
                 }
             }
 
-            Console.WriteLine(string.Join(' ', set.OrderBy(c => c)));
+            Console.WriteLine(string.Join(' ', set.OrderBy(c => c))); // or SortedSet<string>
         }
     }
 }

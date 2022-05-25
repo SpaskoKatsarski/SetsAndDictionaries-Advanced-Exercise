@@ -19,8 +19,6 @@ namespace SetsOfElements
             HashSet<int> firstSet = new HashSet<int>();
             HashSet<int> secondSet = new HashSet<int>();
 
-            List<int> matchingElements = new List<int>();
-
             for (int i = 0; i < firstLength; i++)
             {
                 firstSet.Add(int.Parse(Console.ReadLine()));
@@ -31,18 +29,24 @@ namespace SetsOfElements
                 secondSet.Add(int.Parse(Console.ReadLine()));
             }
 
-            foreach (var num in firstSet)
-            {
-                foreach (var num2 in secondSet)
-                {
-                    if (num == num2)
-                    {
-                        matchingElements.Add(num);
-                    }
-                }
-            }
+            firstSet.IntersectWith(secondSet);
 
-            Console.WriteLine(String.Join(" ", matchingElements));
+            Console.WriteLine(string.Join(' ', firstSet));
+
+            //List<int> matchingElements = new List<int>() { 2, 3, 4};
+
+            //foreach (var num in firstSet)
+            //{
+            //    foreach (var num2 in secondSet)
+            //    {
+            //        if (num == num2)
+            //        {
+            //            matchingElements.Add(num);
+            //        }
+            //    }
+            //}
+
+            //Console.WriteLine(string.Join(" ", matchingElements));
         }
     }
 }
