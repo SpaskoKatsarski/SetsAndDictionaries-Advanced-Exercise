@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountSymbols", "CountSymbol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wardrobe", "Wardrobe\Wardrobe.csproj", "{24BE131F-FFFD-4459-9FD2-2C624EB71906}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{387C6D42-F619-49A7-A53D-C92EF3C6EF1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{387C6D42-F619-49A7-A53D-C92EF3C6EF1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheV-Logger", "TheV-Logger\TheV-Logger.csproj", "{991AD0C5-D0C1-4887-9BEA-709B75E35A0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{387C6D42-F619-49A7-A53D-C92EF3C6EF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{387C6D42-F619-49A7-A53D-C92EF3C6EF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{387C6D42-F619-49A7-A53D-C92EF3C6EF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991AD0C5-D0C1-4887-9BEA-709B75E35A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991AD0C5-D0C1-4887-9BEA-709B75E35A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991AD0C5-D0C1-4887-9BEA-709B75E35A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991AD0C5-D0C1-4887-9BEA-709B75E35A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
