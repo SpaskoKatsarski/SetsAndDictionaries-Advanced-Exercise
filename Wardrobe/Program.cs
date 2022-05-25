@@ -14,13 +14,14 @@ namespace Wardrobe
             for (int i = 0; i < n; i++)
             {
                 string[] input = Console.ReadLine()
-                    .Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
+                    //' ', ',', '-', '+'
+                    .Split(new string[] { " ", ",", "->", "+" }, StringSplitOptions.RemoveEmptyEntries);
 
                 string color = input[0];
 
-                for (int j = 0; j < input.Length - 3; j++)
+                for (int j = 1; j < input.Length; j++)
                 {
-                    string currItem = input[i + 2];
+                    string currItem = input[j];
 
                     if (!wardrobe.ContainsKey(color))
                     {
@@ -52,6 +53,7 @@ namespace Wardrobe
                     if (kvp.Key == colorToSearchFor && kvp2.Key == dress)
                     {
                         Console.WriteLine(" (found!)");
+                    
                     }
                     else
                     {
